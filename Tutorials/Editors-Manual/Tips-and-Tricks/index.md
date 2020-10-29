@@ -1,5 +1,5 @@
 ---
-versionFrom: 7.0.0
+versionFrom: 8.0.0
 ---
 
 # Tips & Tricks
@@ -7,8 +7,6 @@ versionFrom: 7.0.0
 ## [Tips when Working with Folders](Tips-when-Working-with-Folders)
 
 ## [Audit Trail](Audit-Trail)
-
-## [Changing Document Types](Changing-Document-Types)
 
 ## [Notifications](Notifications)
 

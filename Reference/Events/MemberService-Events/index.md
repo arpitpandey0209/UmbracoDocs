@@ -6,7 +6,7 @@ meta.Description: "Information on the various events available in the MemberServ
 
 # MemberService Events
 
-The MemberService implements IMemberService and provides easy access to operations involving IMember.
+The MemberService implements IMemberService and provides access to operations involving IMember.
 
 ## Usage
 
@@ -50,7 +50,8 @@ namespace Umbraco8.Components
         }
         public void Terminate()
         {
-            // Nothing to terminate
+            //unsubscribe during shutdown
+             MemberService.Saved -= MemberService_Saved;
         }
     }
 }

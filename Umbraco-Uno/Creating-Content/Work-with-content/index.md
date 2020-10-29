@@ -10,18 +10,27 @@ In Umbraco Uno there are a hand-full of options for creating content along with 
 
 ## Overview
 
+* [Videos](#video-tutorials)
 * [Creating content](#creating-content)
 * [Updating content](#updating-content)
 * [Deleting content](#deleting-content)
 * [Publishing content](#publishing-content)
 * [Unpublishing content](#unpublishing-content)
 * [Other options](#other-options)
+* [Forms](#forms)
+
+## Video tutorials
+
+On the [Umbraco HQ Youtube channel](https://www.youtube.com/channel/UCcltXlJQ-U553MoOsP9p4wg) you can find a series of video tutorials on how to work with and use Umbraco Uno.
+
+* [Creating new content](https://www.youtube.com/watch?v=frE2jl6e18c&ab_channel=UmbracoHQ)
+* [Updating content](https://www.youtube.com/watch?v=wamxLGnb4Ok&ab_channel=UmbracoHQ)
 
 ## Creating content
 
 Whether you're creating a new landing page, a new section or a feed area, the process of creating a new piece of content follows the same flow:
 
-1. In the Content tree, hover over the piece of content that you want to create a new piece of content under - this could be the Start node or another landing page
+1. In the Content tree, hover over the piece of content that you want to create a new piece of content under - this could be the Start page or another landing page
 2. Selecting the three little dots will open a "Create" dialog
 3. From the "Create" dialog, choose which type of content you want to create - choose between **Page** and **Feed**
 4. Select the chosen type and a workspace area will now display a blank piece of content
@@ -51,7 +60,7 @@ In some cases you might need to delete page or entire sections of your website. 
 3. From the dialog, choose "Delete..."
 4. Select "OK" to confirm the deletion
 
-Once a piece of content or a section has been deleted, it will be moved to the **Recycle Bin** which is accessible from the Content tree. It is possible to **restore** deleted content by either moving the item back under the start node or by right-clicking it in the Content tree and choosing "Restore".
+Once a piece of content or a section has been deleted, it will be moved to the **Recycle Bin** which is accessible from the Content tree. It is possible to **restore** deleted content by either moving the item back under the start page or by right-clicking it in the Content tree and choosing "Restore".
 
 ## Publishing content
 
@@ -59,7 +68,7 @@ When you're done editing a piece of content you can choose to either publish the
 
 To **publish the content right away** select the green "Save and publish" button in the bottom-right corner.
 
-To schedule to content for another point in time select the "Schedule..." option, which canbe found by clicking the arrow next to the green "Save and publish" button in the bottom-right corner.
+To schedule to content for another point in time select the "Schedule..." option, which can be found by clicking the arrow next to the green "Save and publish" button in the bottom-right corner.
 
 ## Unpublishing content
 
@@ -114,5 +123,5 @@ You can setup notifications to be notified whenever a specific action is perform
 This option will reload the sub pages for the selected piece of content.
 
 :::tip
-Use this option on the start node to reload the entire Content tree.
+Use this option on the start page to reload the entire Content tree.
 :::

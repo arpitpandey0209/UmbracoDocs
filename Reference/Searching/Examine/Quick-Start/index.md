@@ -21,7 +21,7 @@ We will make it possible to 'search' on the _People_ page, by adding a search ba
 </nav>
 -->
 <div>
-    <form action="@Model.Url" method="get">
+    <form action="@Model.Url()" method="get">
         <input type="text" placeholder="Search" id="query" name="query" />
         <button>Search</button>
     </form>
@@ -91,7 +91,7 @@ else
                     {
                         var node = Umbraco.Content(result.Id);
                         <li>
-                            <a href="@node.Url">@node.Name</a>
+                            <a href="@node.Url()">@node.Name</a>
                         </li>
                     }
                 }
@@ -154,7 +154,7 @@ The final template looks like this:
         </nav>
         -->
         <div>
-            <form action="@Model.Url" method="get">
+            <form action="@Model.Url()" method="get">
                 <input type="text" placeholder="Search" id="query" name="query" />
                 <button>Search</button>
             </form>
@@ -240,8 +240,13 @@ var results = searcher.CreateQuery().NativeQuery("+__IndexType:content +nodeName
 ### Search children of a specific node
 To search through **all child nodes of a specific node** by their **bodyText property**, amend the query from before like this:
 ```csharp
-var results = searcher.CreateQuery("content").ParentId(1105).Field("bodyText", searchTerm).Execute();
+var results = searcher.CreateQuery("content").ParentId(1105).And().Field("bodyText", searchTerm).Execute();
 ```
+
+### Search descendants of a specific home node
+
+To search through **all descendants of a specific node** by their **bodyText property**, refer to [this article](../examine-events#Adding-the-path-of-the-node-as-a-searchable-field-into-the-index).
+
 :::tip
 If you are familiar with the MVC pattern of working with forms, then have a look at `SurfaceController` documentation. There you can learn how to create a strongly typed form that posts back to a SurfaceController, which then handles the validation of the form post with a custom ViewModel in an MVC-like pattern in Umbraco.
 :::

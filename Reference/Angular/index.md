@@ -6,4 +6,9 @@ Generally you can find information about these via the [Backoffice UI API docume
 
 ## Directives
 
+- [Layout selector](Directives/umbLayoutSelector/) (`<umbLayoutSelector />`)
 - [Load indicator](Directives/umbLoadIndicator/) (`<umbLoadIndicator />`)
+
+## Services
+
+- [Events service](Services/eventsService/)
